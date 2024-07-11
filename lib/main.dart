@@ -9,7 +9,7 @@ import 'text_page.dart';
 import 'search_page.dart';
 import 'about_page.dart';
 import 'chat_page.dart';
-import 'constitution_page.dart'; // Added import for ConstitutionPage
+import 'constitution_page.dart';
 
 void main() {
   runApp(const MyApp());

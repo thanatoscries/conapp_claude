@@ -9,6 +9,15 @@ class ConstitutionPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('The Constitution'),
+        backgroundColor: Colors.teal[700],
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.search),
+            onPressed: () {
+              Navigator.pushNamed(context, '/search');
+            },
+          ),
+        ],
       ),
       body: ListView(
         padding: const EdgeInsets.all(16.0),
@@ -17,18 +26,17 @@ class ConstitutionPage extends StatelessWidget {
             title: const Text('Preamble'),
             onTap: () => Navigator.pushNamed(context, '/preamble'),
           ),
-          ...allChapters
-              .map((chapter) => ExpansionTile(
-                    title: Text(chapter.title),
-                    children: chapter.sections.map((section) {
-                      return ListTile(
-                        title: Text(section['title']!),
-                        onTap: () =>
-                            Navigator.pushNamed(context, section['route']!),
-                      );
-                    }).toList(),
-                  ))
-              .toList(),
+          ...allChapters.map((chapter) {
+            return ExpansionTile(
+              title: Text(chapter.title),
+              children: chapter.sections.map((section) {
+                return ListTile(
+                  title: Text(section['title']!),
+                  onTap: () => Navigator.pushNamed(context, section['route']!),
+                );
+              }).toList(),
+            );
+          }).toList(),
         ],
       ),
     );

@@ -1,5 +1,5 @@
 // content/chapter1.dart
-import 'chapter_model.dart';
+import '../chapter_model.dart';
 
 final Chapter chapter1 = Chapter(
   title: 'Chapter 1 - Founding Provisions',
@@ -8,7 +8,7 @@ final Chapter chapter1 = Chapter(
       'title': '1 The Republic',
       'route': '/chapter1/section1',
       'content': '''
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Zimbabwe is a unitary, democratic and sovereign republic.
 '''
     },
     {

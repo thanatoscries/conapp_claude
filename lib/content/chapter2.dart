@@ -1,5 +1,5 @@
 // content/chapter2.dart
-import 'chapter_model.dart';
+import '../chapter_model.dart';
 
 final Chapter chapter2 = Chapter(
   title: 'Chapter 2 - National Objectives',

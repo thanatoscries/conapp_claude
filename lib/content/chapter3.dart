@@ -1,3 +1,4 @@
+// content/chapter2.dart
 import '../chapter_model.dart';
 
 final Chapter chapter2 = Chapter(
@@ -32,6 +33,13 @@ The State and every person, including juristic persons, and every institution an
 '''
     },
     {
+      'title': '4 National Objectives',
+      'route': '/chapter2/section4',
+      'content': '''
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+'''
+    },
+    {
       'title': '11	Fostering of fundamental rights and freedoms',
       'route': '/chapter2/section5',
       'content': '''
@@ -42,48 +50,28 @@ The State must take all practical measures to protect the fundamental rights and
       'title': '12	Foreign policy',
       'route': '/chapter2/section6',
       'content': '''
-(1)	The foreign policy of Zimbabwe must be based on the following principles—
-	(a)	the promotion and protection of the national interests of Zimbabwe;
-	(b)	respect for international law;
-	(c)	peaceful co-existence with other nations;  and
-	(d)	the settlement of international disputes by peaceful means.
-(2)	The State must promote regional and pan-African cultural, economic and political co-operation and integration and must participate in international and regional organisations that stand for peace and the well-being and progress of the region, the continent and humanity.
-
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 '''
     },
     {
-      'title': '13	National development',
+      'title': '4 National Objectives',
       'route': '/chapter2/section7',
       'content': '''
-(1)	The State and all institutions and agencies of government at every level must endeavour to facilitate rapid and equitable development, and in particular must take measures to—
-	(a)	promote private initiative and self-reliance;
-	(b)	foster agricultural, commercial, industrial, technological and scientific development;
-	(c)	foster the development of industrial and commercial enterprises in order to empower Zimbabwean citizens;  and
-	(d)	bring about balanced development of the different areas of Zimbabwe, in particular a proper balance in the development of rural and urban areas.
-(2)	Measures referred to in this section must involve the people in the formulation and implementation of development plans and programmes that affect them.
-(3)	Measures referred to in this section must protect and enhance the right of the people, particularly women, to equal opportunities in development.
-(4)	The State must ensure that local communities benefit from the resources in their areas.
-
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 '''
     },
     {
-      'title': '14	Empowerment and employment creation',
+      'title': '4 National Objectives',
       'route': '/chapter2/section8',
       'content': '''
-(1)	The State and all institutions and agencies of government at every level must endeavour to facilitate and take measures to empower, through appropriate, transparent, fair and just affirmative action, all marginalised persons, groups and communities in Zimbabwe.
-(2)	At all times the State and all institutions and agencies of government at every level must ensure that appropriate and adequate measures are undertaken to create employment for all Zimbabweans, especially women and youths.
-
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 '''
     },
     {
-      'title': '15	Food security',
+      'title': '4 National Objectives',
       'route': '/chapter2/section9',
       'content': '''
-The State must—
-	(a)	encourage people to grow and store adequate food;
-	(b)	secure the establishment of adequate food reserves;  and
-	(c)	encourage and promote adequate and proper nutrition through mass education and other appropriate means.
-
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 '''
     },
     {
@@ -172,49 +160,49 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
     },
     {
       'title': '4 National Objectives',
-      'route': '/chapter2/section22',
+      'route': '/chapter2/section1',
       'content': '''
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 '''
     },
     {
       'title': '4 National Objectives',
-      'route': '/chapter2/section23',
+      'route': '/chapter2/section1',
       'content': '''
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 '''
     },
     {
       'title': '4 National Objectives',
-      'route': '/chapter2/section24',
+      'route': '/chapter2/section1',
       'content': '''
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 '''
     },
     {
       'title': '4 National Objectives',
-      'route': '/chapter2/section25',
+      'route': '/chapter2/section1',
       'content': '''
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 '''
     },
     {
       'title': '4 National Objectives',
-      'route': '/chapter2/section26',
+      'route': '/chapter2/section1',
       'content': '''
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 '''
     },
     {
       'title': '4 National Objectives',
-      'route': '/chapter2/section27',
+      'route': '/chapter2/section1',
       'content': '''
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 '''
     },
     {
       'title': '4 National Objectives',
-      'route': '/chapter2/section28',
+      'route': '/chapter2/section1',
       'content': '''
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 '''

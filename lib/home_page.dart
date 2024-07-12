@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:io';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatelessWidget {
   final Map<String, Map<String, List<String>>> constitution;
@@ -37,9 +38,9 @@ class HomePage extends StatelessWidget {
               },
             ),
             CustomButton(
-              text: 'Chat to Us',
+              text: 'WhatsApp Us',
               onPressed: () {
-                Navigator.pushNamed(context, '/chat');
+                launchWhatsApp();
               },
             ),
             CustomButton(
@@ -57,6 +58,32 @@ class HomePage extends StatelessWidget {
       ),
     );
   }
+
+  //TODO : Implement a logging service for any crashes/errors
+
+  void launchWhatsApp() async {
+    final String contact = "+263789905942"; // Veritas Chatbot
+    final String text = 'Hi, I would like to know more about my constitution';
+
+    final String androidUrl =
+        "https://wa.me/$contact?text=${Uri.encodeComponent(text)}";
+    final String iosUrl =
+        "https://wa.me/$contact?text=${Uri.encodeComponent(text)}";
+    final String webUrl =
+        "https://api.whatsapp.com/send/?phone=$contact&text=${Uri.encodeComponent(text)}";
+
+    try {
+      if (await canLaunchUrl(Uri.parse(androidUrl))) {
+        await launchUrl(Uri.parse(androidUrl));
+      } else if (await canLaunchUrl(Uri.parse(iosUrl))) {
+        await launchUrl(Uri.parse(iosUrl));
+      } else {
+        await launchUrl(Uri.parse(webUrl));
+      }
+    } catch (e) {
+      print('Error launching WhatsApp: $e');
+    }
+  }
 }
 
 class CustomButton extends StatelessWidget {
@@ -72,9 +99,9 @@ class CustomButton extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          foregroundColor: Colors.white, // Text color
-          backgroundColor: Colors.teal[600], // Button color
-          minimumSize: const Size(200, 50), // Button size
+          foregroundColor: Colors.white,
+          backgroundColor: Colors.teal[600],
+          minimumSize: const Size(200, 50),
           padding: const EdgeInsets.symmetric(vertical: 12.0, horizontal: 24.0),
           textStyle: const TextStyle(
             fontSize: 18.0,

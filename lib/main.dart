@@ -8,7 +8,7 @@ import 'home_page.dart';
 import 'text_page.dart';
 import 'search_page.dart';
 import 'about_page.dart';
-import 'chat_page.dart';
+//import 'chat_page.dart';
 import 'constitution_page.dart';
 
 void main() {
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
         '/constitution': (context) => ConstitutionPage(),
         '/search': (context) => const SearchPage(),
         '/about': (context) => const AboutPage(),
-        '/chat': (context) => const ChatPage(),
+        // '/chat': (context) => const ChatPage(),
         '/preamble': (context) =>
             const TextPage(title: 'Preamble', content: preambleText),
         ...generateRoutesFromChapters(allChapters),

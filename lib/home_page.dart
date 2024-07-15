@@ -59,7 +59,7 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  //TODO : Implement a logging service for any crashes/errors
+  //TODO : Implement a logging service for any crashes/errors check sentry error service
 
   void launchWhatsApp() async {
     final String contact = "+263789905942"; // Veritas Chatbot
